@@ -5,12 +5,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <curses.h>
-#include <string.h>
-#include <math.h>
+//#include <curses.h>
+//#include <string.h>
+//#include <math.h>
 
 #define SIZE 500
-#define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
 
 int op;
@@ -45,8 +44,8 @@ int valor_servicos;
 
 int main(void) {
     do{
-        system("clear"); //Para Linux
-        //system("cls");
+        //system("clear"); //Para Linux
+        system("cls");
         system("color 5F");
         printf("\n\n\n============MENU============\n\n\n1 - Cadastro de Cliente\n2 - Abrir Ordem de Servico\n3 - Listar Cadastros\n4 - Sair\n\nDigite uma opcao: ");
         scanf("%d", &op);
@@ -80,11 +79,10 @@ int main(void) {
 //FUNÇÃO CADASTRO DE CLIENTES
 void modulo_Clientes() {
 
-
     static int linha;
     do {
-        //system("clear"); //Para Linux
-        system("cls");
+        system("clear"); //Para Linux
+        //system("cls");
         system("color 2F");
         printf("\n\n\n===============================");
         printf("\n|----CADASTRO DE CLIENTES-----|");
@@ -131,8 +129,8 @@ void modulo_Ordem_Servico() {
 
     static int linha;
     do {
-        system("clear"); // Para Linux
-        //system("cls");
+        //system("clear"); // Para Linux
+        system("cls");
         system("color 2F");
         printf("\n\n\n===============================");
         printf("\n|----ABRIR ORDEM DE SERVICO----|");
